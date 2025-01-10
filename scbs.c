@@ -3,7 +3,7 @@
 #define WAIT(TEXT) TEXT
 #define MESSAGE_HEAD WAIT(__FILE__)":"WAIT(STR(__LINE__))">"
 
-#include "sbcs.h"
+#include "scbs.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -567,7 +567,7 @@ int Module_link(struct Module* const mod, const char* const exe_name) {
 	return 1;
 }
 
-int SBCS_outputDirectory(const char* const text) {
+int SCBS_outputDirectory(const char* const text) {
 	int not_dir = 0;
 
 	if (OBJ_OUTPUT_DIR != NULL) {
@@ -594,7 +594,7 @@ int SBCS_outputDirectory(const char* const text) {
 	return 1;
 }
 
-void SBCS_cleanup() {
+void SCBS_cleanup() {
 	if (OBJ_OUTPUT_DIR != NULL) {
 		free(OBJ_OUTPUT_DIR);
 	}

@@ -1,5 +1,5 @@
-#ifndef SBCS_HEADER_GUARD
-#define SBCS_HEADER_GUADER
+#ifndef SCBS_HEADER_GUARD
+#define SCBS_HEADER_GUADER
 
 #include <stddef.h>
 
@@ -31,10 +31,10 @@ extern int               Module_wasCompiled(const struct Module* const mod);
 extern int               Module_compile(struct Module* const mod);
 extern int               Module_link(struct Module* const mod, const char* const exe_name);
 
-extern int SBCS_outputDirectory(const char* const text);
+extern int SCBS_outputDirectory(const char* const text);
 
-/* shuts down all extra stuff that SBCS allocated itself */
-extern void SBCS_cleanup();
+/* shuts down all extra stuff that SCBS allocated itself */
+extern void SCBS_cleanup();
 
 #endif
 
